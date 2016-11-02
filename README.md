@@ -1,2 +1,2 @@
-# three-squadrons
-a twist on the classic rock-paper-scissors. (made purely cause i was bored and needed a 30 minute break from eternal woods)
+# Three Squadrons
+A twist on the classic rock-paper-scissors. You have an army with 3 squadrons (rock, paper and scissors) you have to battle other armies and conquer teritory to build our empire. Have fun
