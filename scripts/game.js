@@ -1,20 +1,44 @@
 var userChoice = prompt("Which squad shall we send?[rock][paper][scissors]");
-if(userChoice === rock) {
-  userChoice = "Rock Squad"
+switch(userChoice) {
+  case "rock":
+    alert("You sent forth Rock Platoon.");
+    userChoice = 0;
+    break;
+  case "paper"
+    alert("You sent forth Paper Brigade.");
+    userChoice = 1;
+    break;
+  case "scissors":
+    alert("You sent forth Scissors Squad.");
+    userChoice = 2;
 }
-if(userChoice === paper) {
-  userChoice = "Paper Squad"
-} else {
-  userChoice = "Scissor Squad"
+          
+var computerChoice = Math.floor(Math.random() * 3);
+switch(computerChoice) {
+  case 0:
+    alert("The enemy General sent forth their Rock Platoon.");
+    break;
+  case 1:
+    alert("The enemy General sent forth their Paper Brigade.");
+    break;
+  case 2:
+    alert("The enemy General sent forth their Scissors Squad.");
 }
-var computerChoice = Math.random();
-if (computerChoice < 0.34) {
-	computerChoice = "Rock Squad";
-} else if(computerChoice <= 0.67) {
-	computerChoice = "Paper Squad";
-} else {
-	computerChoice = "Scissor Squad";
-} alert("The enemy general sent forth their" + computerChoice);
-if(userChoice === computerChoice) {
-  alert("tie")
-}//this will be expanded upon
+
+var whoWon = userChoice - computerChoice;
+switch(whoWon) {
+  case 0:
+    alert("A Cease-Fire was issued.");
+    break;
+  case -1:
+    alert("You called for a tactical retreat.");
+    break;
+  case -2:
+    alert("The enemy was defeated.");
+    break;
+  case 1:
+    alert("The enemy surrendered.");
+    break;
+  case 2:
+    alert("Your army was needed at another location. RETREAT!");
+}
